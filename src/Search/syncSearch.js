@@ -1,7 +1,7 @@
 /** @format */
 import React, { useState, useRef } from "react";
 
-import SearchText from "./../SearchView/syncSearchView";
+import SearchText from "./../SearchView/searchView";
 import { dataArray } from "./../Data/dataArray";
 
 function SyncSearch() {
@@ -39,7 +39,7 @@ function SyncSearch() {
   return (
     <div
       className="bg-white mx-auto my-auto shadow-md p-5"
-      style={{ width: "350px", height: "auto" }}
+      style={{ width: "350px", height: "auto"}}
     >
       <p className="text-sm">Sync Search</p>
       <input
@@ -58,6 +58,7 @@ function SyncSearch() {
         searchRef={searchRef}
         listArray={listArray}
         setListArray={setListArray}
+        isAsync={false}
       />
     </div>
   );
